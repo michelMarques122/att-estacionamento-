@@ -1,0 +1,387 @@
+body{
+  margin: 0;
+}
+
+body.temaEscuro{
+  background-color: #444;
+  color: white;
+}
+
+table.temaEscuro{
+  background-color: red;
+}
+
+.btnAberto{
+  background-color: transparent;
+}
+
+.comprafeita{
+  position: fixed;
+  visibility: none;
+  width: 100%;
+  background-color: white;
+  animation: notification 5s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.comprafeita img{
+  width: 50px;
+}
+
+.tela4 section{
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.tela4 img{
+  width: 100%;
+}
+
+.barraloaging{
+  width: 100%;
+  height: 10px;
+  background-color: rgb(54, 201, 24);
+  animation: loading 5s;
+}
+
+@keyframes notification {
+  0%{
+    top: -300px;
+  } 40%{
+    top: 0;
+  } 100%{
+    top: 0;
+  }
+}
+
+@keyframes loading {
+  0%{
+    width: 0;
+  } 
+  40%{
+    width: 0;
+  } 100%{
+    width: 100%;
+  }
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav{
+  background-color: #212529;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 18px;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+}
+
+nav h2{
+  font-size: 1.25rem;
+  font-weight: 400;
+  position: relative;
+  top: -2px;
+}
+
+nav button{
+  height: 49px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(58, 53, 53);
+  transition: background 0.2s ease-in-out;
+  outline: none;
+  text-align: right;
+  font-size: 1rem;
+  border: none;
+}
+
+.menu-items{
+  transition: height 1s ease-in-out, opacity 1s;
+  height: 0px;
+}
+
+.menu-items p{
+  display: none;
+}
+
+header .menu{
+  transition: height 1s ease-in-out;
+  height: 160px;
+}
+
+#menuItem{
+  background-color: #333;
+  color: white;
+}
+
+#menuItem p{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+select{
+  height: 40px;
+  width: 100%;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="time"]{
+  width: 100%;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.form{
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form p{
+  font-weight: bold;
+}
+
+.form button[disabled]{
+  background-color: #ccc;
+}
+
+.realizarcompra{
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  animation: compras 2s;
+}
+
+.message{
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.message button{
+  background: none;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.message .box{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes compras {
+  0%{
+    top: -120%;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+.message .box a{
+  float: right;
+}
+
+.message .box #mensagebutton{
+  text-align: center;
+}
+
+.message .box #mensagebutton :nth-child(1){
+  outline: none;
+  border: 3px solid rgb(54, 201, 24);
+  margin: 10px;
+}
+
+.message .box #mensagebutton :nth-child(2){
+  outline: none;
+  border: 3px solid red;
+}
+
+.message .box button{
+  width: 100px;
+  height: 40px;
+}
+
+#certeza{
+  text-align: center;
+}
+
+.box .imgbox{
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.box .imgbox img{
+  width: 100%;
+}
+
+.errada-vermelho{
+  color: red;
+}
+
+.form button{
+  width: 100%;
+  background: rgb(54, 201, 24);
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form input{
+  outline: none;
+  box-sizing: border-box;
+}
+
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.144);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.tela2{
+  margin-bottom: 80vh;
+}
+
+.tela2 p{
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.historicobox{
+  height: 130px;
+}
+
+.tela2 span *{
+  width: 100%;
+}
+
+.tela2 h2{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.tela2 article :nth-child(even){
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.tela2 article :nth-child(odd){
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.tela2 article h3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+.tela3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tela3 div{
+  max-width: 500px;
+  margin: 100px 0;
+}
+
+.tela3 div p{
+  max-width: 500px;
+}
+
+.tela4{
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 90vh;
+}
+
+.ficha{
+  box-sizing: border-box;
+  padding: 60px;
+  /*border-radius: 5px;*/
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+.ficha p{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.output {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(73, 0, 0, 0.336);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  margin: 20px 0 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
